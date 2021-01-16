@@ -1,4 +1,3 @@
-# htn2020project
-helloooooo
+#Healthaholic
 
-write something random
+Healthaholic is a productivity chrome extension that also helps you improve you mental health!
