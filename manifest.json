@@ -1,20 +1,22 @@
+
 {
 "name": "Healthaholic",
 "version": "1.0",
 "description": "Stress-relieving reminders for a healthy state of mind",
 "background": {
-  "scripts": ["popup.js"],
-  "persistent": false
+"scripts": ["popup.js"],
+"persistent": false
 },
 "browser_action":{
-  "default_popup": "popup.html",
-  "default_icon": "icon128.png"
+"default_popup": "popup.html",
+"default_icon": "icon128.png"
 },
 "chrome_url_overrides" : {
-  "newtab": "override_page.html"
+"newtab": "override_page.html"
 },
 "permissions": [
-  "activeTab"
+"activeTab",
+"alarms"
 ],
 "manifest_version": 2
 }
