@@ -1,19 +1,34 @@
 body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: Roboto, Segoe UI, Helvetica, Arial, sans-serif;
     background: #E0E6E6;
-    font-weight: 300;
+    font-weight: 200;
+    text-align: center;
+    font-size: 3vw;
+
 }
 
 img{
-    max-width: 100%;
-    float: left;
+    max-width: 4%;
+    position: absolute;
+    left: 1%;
+    top: 2%;
 }
 
 h1 {
-    font-size:10vw;
-    text-align: center;
+    font-size: 6vw;
     font-weight: 300;
-    line-height: 50%;
+    line-height: 55%;
+
+}
+
+h2 {
+    font-size: 3vw;
+    font-weight: 300;
+
+}
+
+p{
+    color: #8AB661
 
 }
 
@@ -23,3 +38,8 @@ h1 {
 
 }
 
+
+.divide {
+    margin-top: 17vh;
+    /*margin-bottom: 20vh;*/
+}
