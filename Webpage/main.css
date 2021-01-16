@@ -1,11 +1,25 @@
 body {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     background: #E0E6E6;
+    font-weight: 300;
+}
+
+img{
+    max-width: 100%;
+    float: left;
 }
 
 h1 {
     font-size:10vw;
     text-align: center;
+    font-weight: 300;
+    line-height: 50%;
+
 }
 
-.name
+.usrname {
+    font-weight: bold;
+    color: #FD8664;
+
+}
+
