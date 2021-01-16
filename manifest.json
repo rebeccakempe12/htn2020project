@@ -12,7 +12,7 @@
 "default_icon": "icon128.png"
 },
 "chrome_url_overrides" : {
-"newtab": "override_page.html"
+"newtab": "Webpage/index.html"
 },
 "permissions": [
 "activeTab",
