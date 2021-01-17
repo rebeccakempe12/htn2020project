@@ -16,7 +16,8 @@
 },
 "permissions": [
 "activeTab",
-"alarms"
+"alarms",
+"unsafe-inline"
 ],
 "manifest_version": 2
 }
