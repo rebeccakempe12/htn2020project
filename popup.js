@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
       chrome.tabs.getSelected(null, function(tab) {
         alert("Timer Started");
         chrome.alarms.clearAll(() => {
-        chrome.alarms.create('study', { when: Date.now() + 15000});
+        chrome.alarms.create('study', { when: Date.now() + 60000});
         chrome.alarms.getAll((alarms) => {
         for (const alarm of alarms) {
           console.log(alarm.name);
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     alert("Time's Up! Take a break and relax."),
     console.log("Study is done");
     chrome.alarms.clear("study",()=> {
-      chrome.alarms.create('break', { when: Date.now() + 5000 });
+      chrome.alarms.create('break', { when: Date.now() + 30000 });
       chrome.alarms.getAll((alarms) => {
       for (const alarm of alarms) {
         console.log(alarm.name);
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //   }
 // })
     chrome.alarms.clear("break",()=> {
-      chrome.alarms.create('study', { when: Date.now() + 15000});
+      chrome.alarms.create('study', { when: Date.now() + 60000});
       chrome.alarms.getAll((alarms) => {
       for (const alarm of alarms) {
         console.log(alarm.name);
