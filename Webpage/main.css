@@ -53,8 +53,34 @@ p {
     padding-left: 2%;
     cursor: pointer;
     font-size: 2vw;
-    
 }
+/* Hide the browser's default radio button */
+/*
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+*/
+
+  /* Create a custom radio button */
+
+/*
+.checkmark {
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    background-color: #ffffff;
+    border-radius: 50%;
+    
+  }
+*/
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #FD8664;
+  }
+
+
 
 /*
 hr {
