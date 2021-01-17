@@ -3,23 +3,26 @@ document.addEventListener('DOMContentLoaded', function() {
     checkPageButton.addEventListener('click', function() {
 
       chrome.tabs.getSelected(null, function(tab) {
-        alert("Now the code will do a thing");
-      });
+        alert("Timer Started");
+        chrome.alarms.clearAll(() => {
+        chrome.alarms.create('study', { when: Date.now() + 15000});
+        chrome.alarms.getAll((alarms) => {
+        for (const alarm of alarms) {
+          console.log(alarm.name);
+        }
+        })
+      })
+    });
     }, false);
   }, false);
 
-  chrome.runtime.onInstalled.addListener(() => {
-    console.log('onInstalled...');
-    chrome.alarms.clearAll(() => {
-chrome.alarms.create('study', { when: Date.now() + 15000});
-chrome.alarms.getAll((alarms) => {
-for (const alarm of alarms) {
-  console.log(alarm.name);
-}
-})
-})
+//   chrome.runtime.onInstalled.addListener(() => {
+//     console.log('onInstalled...');
+//
+//
+// })
+//   })
 
-  });
   chrome.alarms.onAlarm.addListener((alarm) => {
     // console.log(alarm.study); // refresh
 
