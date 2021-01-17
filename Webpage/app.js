@@ -3,9 +3,9 @@ function greeting() {
     var hour = new Date().getHours();
 
     if (hour < 3) {
-        greeting = "Good Morning!";
-    } else if (hour >= 3 && hour < 6) {
+        greeting = "Go Sleep!";
     } else if (hour >= 6 && hour < 12) {
+        greeting = "Good Morning!"
     } else if (hour >= 12 && hour < 15) {
         greeting = "Good Afternoon!";
     } else {
