@@ -49,6 +49,13 @@ p {
     line-height: 55%;
 }
 
+.container {
+    padding-left: 2%;
+    cursor: pointer;
+    font-size: 2vw;
+    
+}
+
 /*
 hr {
     content: "&#8226";
