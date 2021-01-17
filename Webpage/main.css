@@ -41,9 +41,10 @@ p {
 /* big container div with titles*/
 .divide {
     margin-top: 17vh;
+    /*
     width: 100%;
     height: 25%;
-
+*/
 
 }
 
@@ -98,9 +99,9 @@ p {
   }
 /*Trying and failing to set up scroll for mutliple questions*/
 .helphowdoiscroll {
-    display: inline-block;
+    display: flex;
     vertical-align: middle;
     /*height: 225px;
-    width: 100%;
-    overflow-x: scroll;*/
+    width: 100%;*/
+    overflow-x: scroll;
 }
