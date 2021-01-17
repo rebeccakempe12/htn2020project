@@ -41,10 +41,8 @@ p {
 /* big container div with titles*/
 .divide {
     margin-top: 17vh;
-    /*
-    width: 100%;
-    height: 25%;
-*/
+    
+    flex: 0 0 100vw;
 
 }
 
@@ -61,14 +59,18 @@ p {
 }
 /* Hide the browser's default radio button */
 .container input {
-    position: absolute;
+    position: relative;
     opacity: 0;
     cursor: pointer;
+    height: 2.5vw;
+    width: 2.5vw;
+    top: 5vh;
+    left: -4vw;
   }
 
   /* Create a custom radio button */
 .checkmark {
-    position: absolute;
+    position: relative;
     height: 2.5vw;
     width: 2.5vw;
     background-color: #ffffff;
@@ -79,13 +81,13 @@ p {
 }
     
   }
-/* On mouse-over, add a grey background color */
+/* On mouse-over, add a yellow background color */
 .container:hover input ~ .checkmark {
     background-color: #FABE0E;
 
   }
 
-/* When the radio button is checked, add a blue background */
+/* When the radio button is checked, add a red background */
 .container input:checked ~ .checkmark {
     background-color: #FD8664;
   }
@@ -102,11 +104,12 @@ p {
   .container input:checked ~ .checkmark:after {
     display: block;
   }
+
+  
 /*Trying and failing to set up scroll for mutliple questions*/
 .helphowdoiscroll {
     display: flex;
     vertical-align: middle;
-    /*height: 225px;
-    width: 100%;*/
+    
     overflow-x: scroll;
 }
