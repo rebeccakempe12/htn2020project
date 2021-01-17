@@ -13,3 +13,4 @@ function greeting() {
     }
     document.getElementById("greetingArea").innerHTML = greeting;
 }
+greeting();
