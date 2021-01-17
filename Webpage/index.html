@@ -10,8 +10,19 @@
 
     <body>
         <script>
-            //document.getElementById('greeting').innerHTML = greeting;
-            document.write(number);
+            var greeting;
+            var hour = date.getHours();
+
+            <p id = "text"></p>
+
+            if (hour < 12) {
+                greeting = "Good Morning!";
+            } else if (time >= 12 && time < 3) {
+                greeting = "Good Afternoon!";
+            } else {
+                greeting = "Good Evening!";
+            }
+            document.getElementById("text").innerHTML = greeting;
         </script>
         
         <h1 class="usrname">ReallyLongName.</h1>
