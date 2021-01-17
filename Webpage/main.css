@@ -27,7 +27,7 @@ h2 {
 
 }
 
-p{
+p {
     color: #8AB661
 
 }
@@ -43,3 +43,14 @@ p{
     margin-top: 17vh;
     /*margin-bottom: 20vh;*/
 }
+
+.tip {
+    color: #000;
+    line-height: 55%;
+}
+
+/*
+hr {
+    content: "&#8226";
+}
+*/
