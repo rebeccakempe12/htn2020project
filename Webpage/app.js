@@ -1,12 +1,10 @@
-<p id = "text"></p>
-
-function text() {
+function greeting() {
     var greeting;
-    var hour = date.getHours();
+    var hour = new Date().getHours();
 
     if (hour < 12) {
         greeting = "Good Morning!";
-    } else if (time >= 12 && time < 3) {
+    } else if (hour >= 12 && hour < 3) {
         greeting = "Good Afternoon!";
     } else {
         greeting = "Good Evening!";
