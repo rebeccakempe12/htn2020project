@@ -11,5 +11,5 @@ function text() {
     } else {
         greeting = "Good Evening!";
     }
-    document.getElementById("text").innerHTML = greeting;
+    document.getElementById("greetingArea").innerHTML = greeting;
 }
