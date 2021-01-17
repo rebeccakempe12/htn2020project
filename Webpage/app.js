@@ -3,13 +3,13 @@ function greeting() {
     var hour = new Date().getHours();
 
     if (hour < 3) {
-        greeting = "Go Sleep!";
+        greeting = "Go to Sleep,";
     } else if (hour >= 6 && hour < 12) {
-        greeting = "Good Morning!"
+        greeting = "Good Morning,"
     } else if (hour >= 12 && hour < 15) {
-        greeting = "Good Afternoon!";
+        greeting = "Good Afternoon,";
     } else {
-        greeting = "Good Evening!";
+        greeting = "Good Evening,";
     }
     document.getElementById("greetingArea").innerHTML = greeting;
 }
